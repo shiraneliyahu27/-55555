@@ -1,46 +1,11 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-<style>
-/* בסיס */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  direction: rtl;
-}
-
-/* אזור תוכן */
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-/* גלריה */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 22px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
-}
-</style>
-
-  <head>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>תומר שיפוצים ואינסטלציה | שיפוץ דירה קומפלט</title>
-  <meta name="description" content="תומר שיפוצים ואינסטלציה – שיפוצים כלליים, גבס, צבע, ריצוף וחיפוי, שיפוץ חדרי רחצה ומטבחים ואיתור נזילות. שירות מקצועי באזור נס ציונה, רחובות והמרכז." />
+  <meta name="description" content="תומר שיפוצים ואינסטלציה – שיפוצים כלליים, גבס, צבע, ריצוף וחיפוי, שיפוץ חדרי רחצה ומטבחים ואיתור נזילות. שירות מקצועי באזור נס ציונה והמרכז." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://shiraneliyahu27.github.io/-55555/" />
 
@@ -51,36 +16,91 @@ section {
   <meta property="og:description" content="שיפוץ דירה קומפלט, אינסטלציה, גבס, צבע וריצוף – הצעת מחיר מהירה." />
   <meta property="og:url" content="https://shiraneliyahu27.github.io/-55555/" />
 
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"תומר שיפוצים ואינסטלציה",
-    "telephone":"+972559400353",
-    "url":"https://shiraneliyahu27.github.io/-55555/",
-    "areaServed":["נס ציונה","רחובות","ראשון לציון","יבנה","מרכז"],
-    "description":"שיפוצים כלליים, אינסטלציה, גבס, צבע, ריצוף וחיפוי, שיפוץ חדרי רחצה ומטבחים ואיתור נזילות."
-  }
-  </script>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>תומר שיפוצים ואינסטלציה</title>
-
   <style>
+    * { box-sizing: border-box; }
+
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #fafafa;
-      margin: 0;
+      color: #2f2f2f;
+      direction: rtl;
+      line-height: 1.7;
     }
 
+    header {
+      background: linear-gradient(90deg,#fff,#f6f1e7);
+      padding: 55px 20px;
+      text-align: center;
+      border-bottom: 2px solid #e6dcc5;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      color: #6b4f2a;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.25rem;
+      color: #8a6a3b;
+    }
+
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #e6dcc5;
+      padding: 14px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    nav a {
+      color: #6a6a6a;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 14px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 38px;
+      color: #bfa76a;
+      font-size: 2rem;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 22px;
+    }
+
+    .service-item {
+      background: #fff;
+      border-radius: 16px;
+      padding: 26px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,.06);
+    }
+
+    /* גלריה */
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+      gap: 22px;
+    }
+
+    .gallery-grid figure {
+      margin: 0;
+      text-align: center;
     }
 
     .gallery-grid img {
@@ -88,30 +108,60 @@ section {
       height: 260px;
       object-fit: cover;
       border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      box-shadow: 0 10px 24px rgba(0,0,0,.12);
+      display: block;
     }
-  </style>
-</head>
 
-  <style>
-    body{font-family:Arial,sans-serif;margin:0;background:#fafafa;color:#2f2f2f;line-height:1.7}
-    header{background:linear-gradient(90deg,#fff,#f6f1e7);padding:55px 20px;text-align:center;border-bottom:2px solid #e6dcc5}
-    header h1{margin:0;font-size:2.6rem;color:#6b4f2a}
-    header p{margin:10px 0 0;font-size:1.25rem;color:#8a6a3b}
-    nav{background:#fff;border-bottom:1px solid #e6dcc5;padding:14px;text-align:center;position:sticky;top:0;z-index:50}
-    nav a{color:#6a6a6a;text-decoration:none;font-weight:bold;margin:0 14px;padding:8px 10px;border-radius:10px}
-    nav a:hover{background:#f6f1e7;color:#b08e39}
-    section{max-width:1100px;margin:auto;padding:60px 18px}
-    h2{text-align:center;margin-bottom:38px;color:#bfa76a;font-size:2rem}
-    .service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-    .service-item{background:#fff;border:1px solid #ece6d8;border-radius:16px;padding:26px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.06)}
-    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
-    .gallery-grid img{width:100%;height:260px;object-fit:cover;border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.12)}
-    .contact-card{background:#fff;border:1px solid #ece6d8;border-radius:16px;padding:26px;max-width:680px;margin:auto;text-align:center}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:bold}
-    .primary{background:#25D366;color:#fff}
-    footer{background:#fff;border-top:2px solid #e6dcc5;padding:30px;text-align:center;color:#7a7a7a}
-    .whatsapp-float{position:fixed;left:18px;bottom:18px;width:62px;height:62px;border-radius:50%;background:#25D366;color:#fff;font-size:30px;display:flex;align-items:center;justify-content:center;text-decoration:none}
+    .gallery-grid figcaption {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: #6b4f2a;
+    }
+
+    .contact-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 26px;
+      max-width: 680px;
+      margin: auto;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,.06);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 8px;
+    }
+
+    .primary { background: #25D366; color: #fff; }
+
+    footer {
+      background: #fff;
+      border-top: 2px solid #e6dcc5;
+      padding: 30px;
+      text-align: center;
+      color: #7a7a7a;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -140,43 +190,26 @@ section {
   </div>
 </section>
 
-<div class="gallery-grid">
+<section id="gallery">
+  <h2>גלריית עבודות</h2>
 
-  <figure>
-    <img src="images/WORK1.jpg" loading="lazy" alt="תקרת גבס עם תאורה נסתרת">
-    <figcaption>תקרת גבס עם תאורה נסתרת</figcaption>
-  </figure>
+  <div class="gallery-grid">
+    <figure><img src="images/WORK1.jpg" loading="lazy" alt="תקרת גבס עם תאורה נסתרת"><figcaption>תקרת גבס עם תאורה נסתרת</figcaption></figure>
+    <figure><img src="images/WORK2.jpg" loading="lazy" alt="שיפוץ חדר רחצה יוקרתי"><figcaption>שיפוץ חדר רחצה יוקרתי</figcaption></figure>
+    <figure><img src="images/WORK3.jpg" loading="lazy" alt="שיפוץ חדר רחצה מודרני"><figcaption>שיפוץ חדר רחצה מודרני</figcaption></figure>
+    <figure><img src="images/WORK4.jpg" loading="lazy" alt="תקרת גבס מודרנית"><figcaption>תקרת גבס מודרנית</figcaption></figure>
+    <figure><img src="images/WORK5.jpg" loading="lazy" alt="עבודות גבס ותאורה"><figcaption>עבודות גבס ותאורה</figcaption></figure>
 
-  <figure>
-    <img src="images/WORK2.jpg" loading="lazy" alt="שיפוץ חדר רחצה יוקרתי">
-    <figcaption>שיפוץ חדר רחצה יוקרתי</figcaption>
-  </figure>
-
-</div>
-
-  <img src="/-55555//WORK3.jpg" loading="lazy" alt="שיפוץ חדר רחצה מודרני - גמרים מתקדמים">
-  <img src="/-55555/WORK4.jpg" loading="lazy" alt="תקרת גבס מודרנית עם תאורה נסתרת, ספוטים ופסי לד">
-
-  <img src="/-55555/IMAGE5.jpg" loading="lazy" alt="שיפוצים כלליים ועבודות גבס">
-  <img src="/-55555/IMAGE6.jpg" loading="lazy" alt="שיפוץ חדר רחצה עם ניאגרה סמויה, אסלה תלויה וחיפוי שיש">
-  <img src="/-55555/IMAGE7.jpg" loading="lazy" alt="שיפוץ חדר רחצה יוקרתי עם אסלה תלויה">
-  <img src="/-55555/IMAGE8.jpg" loading="lazy" alt="חדר רחצה מודרני לאחר שיפוץ קומפלט">
-
-  <img src="/-55555/IMAGE9.jpg" loading="lazy" alt="שיפוץ חדר רחצה יוקרתי עם כיור מונח וברז זהב">
-  <img src="/-55555/IMAGE10.jpg" loading="lazy" alt="שיפוץ מקלחון יוקרתי עם חיפוי שיש וזכוכית">
-  <img src="/-55555/IMAGE11.jpg" loading="lazy" alt="עבודות גבס ותשתיות חשמל ומיזוג לפני סגירת תקרה">
-  <img src="/-55555/images/IMAGE12.jpg" loading="lazy" alt="גרם מדרגות מודרני עם מעקה זכוכית">
-
-  <img src="/-55555/IMAGE13.jpg" loading="lazy" alt="שיפוץ בית פרטי עם גלריה ומעקה זכוכית">
-  <img src="/-55555/IMAGE14.jpg" loading="lazy" alt="שיפוץ פנים בית פרטי - עבודות גבס ותשתיות">
-  <img src="/-55555/IMAGE15.jpg" loading="lazy" alt="שיפוץ דירה קומפלט - סלון מרווח בעיצוב מודרני">
-  <img src="/-55555/IMAGE16.jpg" loading="lazy" alt="שיפוץ דירה קומפלט - חלל מגורים מודרני">
-  <img src="/-55555/IMAGE17.jpg" loading="lazy" alt="שיפוץ דירה קומפלט - סלון מודרני ומואר">
-
-
+    <figure><img src="images/image10.jpg" loading="lazy" alt="שיפוץ חדר רחצה"><figcaption>שיפוץ חדר רחצה</figcaption></figure>
+    <figure><img src="images/image11.jpg" loading="lazy" alt="חיפוי וריצוף"><figcaption>חיפוי וריצוף</figcaption></figure>
+    <figure><img src="images/image12.jpg" loading="lazy" alt="גרם מדרגות מודרני"><figcaption>גרם מדרגות מודרני</figcaption></figure>
+    <figure><img src="images/image13.jpg" loading="lazy" alt="שיפוץ בית פרטי"><figcaption>שיפוץ בית פרטי</figcaption></figure>
+    <figure><img src="images/image14.jpg" loading="lazy" alt="עבודות גבס ותשתיות"><figcaption>עבודות גבס ותשתיות</figcaption></figure>
+    <figure><img src="images/image15.jpg" loading="lazy" alt="סלון לאחר שיפוץ"><figcaption>סלון לאחר שיפוץ</figcaption></figure>
+    <figure><img src="images/image16.jpg" loading="lazy" alt="חלל מגורים מודרני"><figcaption>חלל מגורים מודרני</figcaption></figure>
+    <figure><img src="images/image17.jpg" loading="lazy" alt="שיפוץ דירה קומפלט"><figcaption>שיפוץ דירה קומפלט</figcaption></figure>
   </div>
 </section>
-
 
 <section id="contact">
   <h2>צור קשר</h2>
@@ -195,11 +228,3 @@ section {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
