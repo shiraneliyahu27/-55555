@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>תומר שיפוצים ואינסטלציה | שיפוץ דירה קומפלט</title>
-  <meta name="description" content="תומר שיפוצים ואינסטלציה – שיפוצים כלליים, גבס, צבע, ריצוף וחיפוי, שיפוץ חדרי רחצה ומטבחים – הצעת מחיר מהירה. 055-940-0353" />
+  <meta name="description" content="תומר שיפוצים ואינסטלציה – שיפוצים כלליים, גבס, צבע, ריצוף וחיפוי, שיפוץ חדרי רחצה ומטבחים" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://shiraneliyahu27.github.io/-55555/" />
 
@@ -75,18 +75,39 @@
     }
 
     .contact-link-nav {
-      padding: 10px 20px;
+      padding: 14px 28px;
       background-color: #25D366;
       color: #fff !important;
-      border-radius: 25px;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-size: 1.05rem;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
     }
 
     .contact-link-nav:hover {
       background-color: #1aa35a;
-      transform: scale(1.05);
+      transform: scale(1.08);
+      box-shadow: 0 6px 18px rgba(26, 163, 90, 0.4);
+    }
+
+    .contact-link-nav span.phone {
+      font-size: 0.95rem;
+    }
+
+    .contact-link-nav span.label {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .contact-link-nav span.label {
+        display: inline;
+      }
     }
 
     section {
@@ -221,6 +242,13 @@
       justify-content: center;
       text-decoration: none;
       z-index: 10000;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5);
     }
   </style>
 </head>
@@ -236,7 +264,11 @@
   <a href="#services">שירותים</a>
   <a href="#gallery">גלריה</a>
   <a href="#contact">צור קשר</a>
-  <a class="contact-link-nav" href="tel:+972559400353">📞 התקשר עכשיו</a>
+  <a class="contact-link-nav" href="tel:+972559400353">
+    <span>📞</span>
+    <span class="label">התקשר עכשיו להצעת מחיר:</span>
+    <span class="phone">055-940-0353</span>
+  </a>
 </nav>
 
 <section id="services">
@@ -328,8 +360,8 @@
   <h2>צור קשר</h2>
   <div class="contact-card">
     <p>לתאום פגישה וקבלת הצעת מחיר</p>
-    <a class="btn primary" href="tel:+972559400353">📞 התקשר עכשיו   תומר</a>
-    <a class="btn" href="https://wa.me/972559400353" target="_blank" rel="noopener">💬 וואטסאפ</a>
+    <a class="btn primary" href="tel:+972559400353">📞 התקשר עכשיו | 055-940-0353</a>
+    <a class="btn" href="https://wa.me/972559400353" target="_blank" rel="noopener">💬 וואטסאפ להצעה מהירה</a>
   </div>
 </section>
 
@@ -363,4 +395,3 @@
 
 </body>
 </html>
-
